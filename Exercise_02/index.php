@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $age = $_POST['age'] ?? '';
 
     $errors = [];
-    //empty field validation:
+
     if (empty($username)) {
         $errors[] = "Username cannot be empty";
     }
